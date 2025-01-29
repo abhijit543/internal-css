@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid LAyout</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 16% 16% 16% 16% 16% 16%;
+      }
+      @media (max-width: 600px) {
+        .container {
+          display: grid;
+          grid-template-columns: 33.3% 33.3% 33.3%;
+        }
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        gap: 20px;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div1">City</div>
+      <div class="div1">Books</div>
+      <div class="div1">User</div>
+      <div class="div1">Product</div>
+      <div class="div1">Comments</div>
+      <div class="div1">Car</div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Toyota Camry</h3>
+        <img src="toyota-camry.jpg" alt="Toyota Camry" />
+        <p>Rs. 289000</p>
+        <p>Engine- Petrol</p>
+        <p>Version-XL</p>
+      </div>
+      <div class="card">
+        <h3>Toyota RAV4</h3>
+        <img src="toyota-rav4.jpg" alt="Toyota RAV4" />
+        <p>Rs. 289000</p>
+        <p>Engine- Diesel/Electric</p>
+        <p>Version-Hybrid</p>
+      </div>
+      <div class="card">
+        <h3>Toyota RAV4</h3>
+        <img src="toyota-rav4.jpg" alt="Toyota RAV4" />
+        <p>Rs. 289000</p>
+        <p>Engine- Diesel/Electric</p>
+        <p>Version-Hybrid</p>
+      </div>
+    </div>
+  </body>
+</html>
